@@ -1,7 +1,7 @@
 **INSTRUCTIONS:**
 
 This is designed to work using the slurm executor on an HPC. It can also be run locally.
-You MUST import a relevant reference genome and name it "Homo_sapiens.GRCh38.dna_sm.primary_assembly.normalized.fa".
+You MUST import a relevant reference genome and change the params.reference variable in .config file.
 
 1. Clone the repo and enter the directory:
 
