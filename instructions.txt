@@ -1,0 +1,29 @@
+INSTRUCTIONS:
+
+After logging onto your Greene account and entering into an approproate scratch directory run this command:
+
+cp /scratch/ajw9735/nf_fastp_bwa .
+
+Then enter the directory:
+
+cd nf_fastp_bwa
+
+From the directory import nextflow:
+
+module load nextflow/21.10.6
+
+Then run this command to see options:
+
+nextflow run script.nf --help
+
+Then you can run this command to execute the script, changing the username:
+
+sbatch nextflow run script.nf --usrname name@nyu.edu
+
+Results will show up for each process in the results-dir directory, with the final 3 bam files in the sort_results subdirectory.
+
+NOTE: I use DSL2 in which channels between processes are implicit, I initialized 1 channel, but I think there should technically be 3 though I don't explicitly define them.
+Also if there is an issue with the first cp command (like some permissions that I am unaware of) apologies. :fingers_crossed
+
+P.S. Thanks! And would really appreciate feedback, I will likely be using nextflow for a project I am doing this summer and I'm sure my submission could use 
+a lot of improvement (if it does not throw errors as is) and considering there are not a ton of guides online, any feedback really would be utilized.
