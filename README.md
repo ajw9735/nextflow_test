@@ -7,7 +7,7 @@ You MUST import a relevant reference genome and change the params.reference vari
 
 `cd nf_fastp_bwa`
 
-2. From the directory import nextflow:
+2. From the directory import nextflow (this is HPC dependent):
 
 `module load nextflow/21.10.6`
 
