@@ -1,6 +1,7 @@
 **INSTRUCTIONS:**
 
 This is designed to work using the slurm executor on an HPC. It can also be run locally.
+You MUST import a relevant reference genome and name it "Homo_sapiens.GRCh38.dna_sm.primary_assembly.normalized.fa".
 
 1. Clone the repo and enter the directory:
 
@@ -19,3 +20,4 @@ This is designed to work using the slurm executor on an HPC. It can also be run 
 `sbatch nextflow run script.nf --usrname name@nyu.edu`
 
 5. Results will show up for each process in the results-dir directory, with the final 3 bam files in the sort_results subdirectory.
+
